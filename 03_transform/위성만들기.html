@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>위성</title>
+    <style>
+      #wrap { position: relative;
+              width: 500px; height: 500px;
+              margin: 100px auto 0;
+              padding-top: 100px;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              border-radius: 50%;
+              text-align: center;
+              color: #fff;
+            }
+      #earth { width: 300px; height: 300px;
+              margin: 0 auto; border-radius: 50%;
+              line-height: 300px; font-size: 50px;
+              background: #0083ee;
+              animation-name: ani;
+              animation-duration: 5s;
+              animation-iteration-count: infinite;
+              animation-timing-function: linear;
+              animation-direction: reverse;
+            }
+      #moon { position: absolute; top: 0; left: 0;
+              width: 85px; height: 85px;
+              border-radius: 50%;
+              background: #ff2949;
+              line-height: 85px;
+              animation-name: ani;
+              animation-duration: 5s;
+              animation-iteration-count: infinite;
+              animation-timing-function: linear;
+              transform-origin: 250px 250px;
+            }
+      @keyframes ani {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="earth">지구</div>
+      <div id="moon">달</div>
+    </div>
+  </body>
+</html>
